@@ -17,4 +17,6 @@ sudo kubectl version --client
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 apt install conntrack
+sudo chown -R $USER $HOME/.minikube
+chmod -R u+wrx $HOME/.minikube
 sudo minikube start --driver=none
